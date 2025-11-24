@@ -15,11 +15,6 @@ const Freelancing = () => {
       description: "Android and cross-platform applications",
     },
     {
-      icon: Palette,
-      title: "UI/UX Design",
-      description: "User-centered design solutions",
-    },
-    {
       icon: Rocket,
       title: "Full Stack",
       description: "End-to-end development services",
@@ -62,7 +57,7 @@ const Freelancing = () => {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-8 max-w-3xl mx-auto">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (

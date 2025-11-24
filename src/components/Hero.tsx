@@ -43,42 +43,6 @@ const Hero = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
             Passionate web & app developer creating impactful digital solutions that solve modern challenges
           </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={() => scrollToSection("projects")}
-              className="min-w-[200px]"
-            >
-              View Portfolio
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => scrollToSection("contact")}
-              className="min-w-[200px] border-primary/30 hover:bg-primary/10"
-            >
-              Contact Me
-            </Button>
-          </div>
-
-          <div className="flex items-center justify-center gap-6">
-            <a
-              href="https://github.com/A-BHARATH77"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              <Github className="w-6 h-6" />
-            </a>
-            <a
-              href="mailto:ppybharath19@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              <Mail className="w-6 h-6" />
-            </a>
-          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -86,7 +50,6 @@ const Hero = () => {
             onClick={() => scrollToSection("about")}
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <ArrowDown className="w-6 h-6" />
           </button>
         </div>
       </div>

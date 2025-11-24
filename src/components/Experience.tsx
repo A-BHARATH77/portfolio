@@ -32,14 +32,10 @@ const Experience = () => {
                     <MapPin className="w-4 h-4" />
                     <span>Coimbatore, Tamil Nadu</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    <span>May 2025 – November 2027</span>
-                  </div>
                 </div>
               </div>
               <div className="px-4 py-2 bg-gradient-primary rounded-lg text-primary-foreground text-sm font-medium self-start">
-                Current
+                May 2025 - November 2025
               </div>
             </div>
 

@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Code, Eye, Camera, MessageSquare, Shirt, Plus } from "lucide-react";
+import { Code, Camera, MessageSquare, Shirt, Plus } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -62,9 +62,17 @@ const Projects = () => {
             return (
               <Card
                 key={project.title}
-                className="group p-6 bg-card/50 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-purple hover:-translate-y-2 animate-scale-in"
+                className="group p-6 bg-card/50 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-purple hover:-translate-y-2 animate-scale-in relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="absolute top-4 right-4 border-primary/30 hover:bg-primary/10"
+                >
+                  <Code className="w-4 h-4" />
+                </Button>
+
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.color} p-4 mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className="w-full h-full text-primary-foreground" />
                 </div>
@@ -85,24 +93,6 @@ const Projects = () => {
                     </li>
                   ))}
                 </ul>
-                
-                <div className="flex gap-2">
-                  <Button
-                    variant="gradient"
-                    size="sm"
-                    className="flex-1"
-                  >
-                    <Eye className="w-4 h-4 mr-2" />
-                    View Details
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-primary/30 hover:bg-primary/10"
-                  >
-                    <Code className="w-4 h-4" />
-                  </Button>
-                </div>
               </Card>
             );
           })}
